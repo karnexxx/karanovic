@@ -1,0 +1,527 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+@font-face {
+  font-family: font1;
+  src: url(../fonts/ttf/Unageo-Bold.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../fonts/ttf/Unageo-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(../fonts/ttf/Unageo-Bold.ttf);
+}
+
+html,body{ 
+	background:#fff;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+}
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  background-color: #fff;
+  padding: 0px 25px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 4px#000;
+  height: 70px;
+  font-family: font2;
+  z-index: 999;
+}
+
+.nav-bar .navbar-toggle{
+  display: none;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar .links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.nav-bar .links li{
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0;
+}
+
+.nav-bar .links li a{
+  color: #000;
+  position: relative;
+}
+
+.nav-bar .links li a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #1ebbd7;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all .3s ease;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-bar .links li a:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-bar .logo a{
+  font-family: font3;
+  color: #000;
+  font-size: 23px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  color: #000;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-bar .logo a:hover{
+  color: #ff7b00;
+}
+
+.hero{
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  font-family: font1;
+}
+
+.hero .hero-img{
+  margin-top: 20px;
+}
+
+.hero .hero-text{
+  display: flex;
+  margin-top: -70px;
+  flex-direction: column;
+}
+
+.hero .hero-text h1{
+  color: #002057;
+  font-size: 70px;
+  padding-bottom: 15px;
+}
+
+.hero .hero-text h1 span{
+  color: #ff7b00;
+}
+
+.hero .hero-text h2{
+  font-size: 33px;
+  padding-bottom: 15px;
+}
+
+.hero .hero-text h2 span{
+  color: #a02424;
+}
+
+.hero .hero-text .about-btn{
+  text-align: center;
+  color: #fff;
+  width: 150px;
+  border: none;
+  border-radius: 50px;
+  background-color: #2506ad;
+  padding: 15px 15px;
+  font-size: 19px;
+  margin-top: 12px;
+  box-shadow: 0px 0px 6px #2506ad;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero .hero-text .about-btn:hover{
+  color: #2506ad;
+  background-color: transparent;
+}
+
+.about{
+  margin-top: 20px;
+  height: 100vh;
+}
+
+.about h1{
+  text-align: center;
+  font-size: 60px;
+  color: #202020;
+  font-family: font1;
+  padding-top: 50px;
+}
+
+.about h1 span{
+  color: #7303a7;
+}
+
+.about hr{
+  width: 100px;
+  border: none;
+  height: 3px;
+  background-color: #9f0be4;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.about p span{
+  color: #7303a7;
+}
+
+.about p{
+  padding-top: 70px;
+  color: #202020;
+  font-family: font3;
+  font-size: 25px;
+}
+
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 90px;
+  justify-content: space-between;
+}
+
+.skills .skill{
+  width: 308px;
+  margin-bottom: 100px;
+}
+
+.skills h1{
+  color: #002057;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.skills p{
+  font-size: 17px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.skills img{
+  margin-top: 20px;
+  display: block;
+  margin: auto;
+  width: 110px;
+  border-radius: 25px;
+  box-shadow: 15px -15px 4px #1a1f44;
+}
+
+.projects{
+  height: 100vh;
+}
+
+.projects h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: font3;
+  font-size: 50px;
+  color: #202020;
+  padding-top: 10px;
+}
+
+.projects h4{
+  text-align: center;
+  color: #515050;
+  font-size: 16px;
+  font-family: font1;
+  text-transform: capitalize;
+}
+
+.projects .project-container{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.projects .project-container .projects-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 150px;
+}
+
+.projects .project-container .projects-card #project-img{
+  width: 50%;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px #000;
+}
+
+.projects .project-container .projects-card .project-text{
+  margin-top: 40px;
+}
+
+.projects .project-container .projects-card .project-text #web-btn{
+  color: #fff;
+  background-color: #000;
+  padding: 15px 25px; 
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-family: font1;
+  font-size: 16px;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.projects .project-container .projects-card .project-text #web-btn:hover{
+  background-color: transparent;
+  color: #000;
+}
+
+.projects .project-container .projects-card .project-text h2{
+  color: #000;
+  font-family: font3;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  text-transform: capitalize;
+}
+
+.projects .project-container .projects-card .project-text #details{
+  text-transform: capitalize;
+  color: #000;
+  font-size: 22px;
+  font-family: font3;
+  border-bottom: 2px solid #000;
+  padding-bottom: 7px;
+}
+
+.projects .project-container .projects-card .project-text #details:hover img{
+  top: 7px;
+}
+
+.projects .project-container .projects-card .project-text #details img{
+  width: 30px;
+  position: relative;
+  top: 10px;
+  left: 3px;
+  transition: top 0.1s ease-in;
+}
+
+.contact{
+  margin-top: 1100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-heading h1{
+  color: #202020;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: font3;
+}
+
+.contact .contact-heading h2{
+  font-size: 40px;
+  font-family: font2;
+  color: #0e43d4;
+  margin-top: 15px;
+}
+
+.contact .contact-heading p{
+  color: #515050;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contact form{
+  margin-top: 100px;
+  align-self: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.contact form .input-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.contact form .input-content .small-label{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact form .input-content .small-label label{
+  color: #0e43d4;
+  font-family: font1;
+  font-size: 14px;
+}
+
+.contact form .input-content .contact-inputs{
+  width: 380px;
+  font-family: font2;
+  border: none;
+  border-bottom: 1px solid #0e43d4;
+  font-size: 16px;
+}
+
+.contact form .input-content .contact-inputs:focus{
+  outline: none;
+  border-bottom: 2px solid #0e43d4;
+}
+
+.contact form textarea{
+  height: 120px;
+  border: none;
+  border-bottom:
+  1px solid #0e43d4;
+  margin-bottom: 10px;
+  resize: none;
+  font-size: 16px;
+  font-family: font2;
+}
+
+.contact form textarea:focus{
+  outline: none;
+  border-bottom: 2px solid #0e43d4;
+}
+
+.contact form button{
+  align-self: flex-end;
+  color: #0e43d4;
+  background-color: transparent;
+  border: 1px solid #0e43d4;
+  padding: 15px 25px;
+  font-family: font3;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.contact form button:hover{
+  color: #fff;
+  background-color: #0e43d4;
+}
+
+#footer-container{
+  background-color: #000;
+}
+
+#footer-container .footer{
+  background-color: #000;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-content{
+  width: 50%;
+}
+
+.footer .footer-content h1{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: font3;
+}
+
+.footer .footer-content p{
+  color: #7a7979;
+  font-size: 18px;
+  font-family: font1;
+  margin-bottom: 30px;
+}
+
+.footer .footer-btn a{
+  color: #000;
+  background-color: #fff;
+  padding: 20px 35px;
+  display: flex;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: font3;
+  border-radius: 20px;
+  border: 1px solid #000;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.footer .footer-btn a:hover{
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+}

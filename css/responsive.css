@@ -1,0 +1,388 @@
+@media only screen and (max-width: 1399px){
+    #particles-js{
+        height: 1150px;
+    }
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills{
+        justify-content: center;
+        column-gap: 6px;
+    }
+
+    .hero .hero-text{
+        align-self: flex-start;
+        margin-top: 60px;
+    }
+
+    .hero .hero-img img{
+        width: 550px;
+        margin-top: 20px;
+    }
+
+    .about{
+        margin-top: 400px;
+    }
+
+    .projects{
+        margin-top: 500px;
+    }
+
+    .contact form .input-content{
+        width: 100%;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+
+    .contact form .input-content .small-label input{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    #particles-js{
+        height: 1150px;
+    }
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills{
+        justify-content: center;
+        column-gap: 6px;
+    }
+
+    .hero .hero-text{
+        align-self: flex-start;
+        margin-top: 60px;
+    }
+
+    .hero .hero-img img{
+        width: 550px;
+        margin-top: 20px;
+    }
+
+    .about{
+        margin-top: 380px;
+    }
+
+    .projects{
+        margin-top: 550px;
+    }
+
+    .projects .project-container .projects-card .project-text #web-btn{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .projects .project-container .projects-card .project-text h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .projects .project-container .projects-card .project-text #details{
+        font-size: 20px;
+    }
+
+    .projects .project-container .projects-card{
+        justify-content: space-between;
+        column-gap: 100px;
+    }
+
+    .contact{
+        margin-top: 800px;
+    }
+
+    .contact form .input-content .small-label input{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .projects{
+        margin-top: 750px;
+    }
+
+    .projects .project-container .projects-card{
+        flex-direction: column;
+        align-items: center;
+        align-content: left;
+    }
+
+    .projects .project-container #reverse{
+        flex-direction: column-reverse;
+    }
+
+    .projects .project-container .projects-card #project-img{
+        width: 65%;
+    }
+
+    .projects .project-container .projects-card .project-text #web-btn{
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+
+    .projects .project-container .projects-card .project-text h2{
+        font-size: 40px;
+    }
+
+    .contact{
+        margin-top: 1750px;
+    }
+
+    .contact form{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .projects{
+        margin-top: 1500px;
+    }
+
+    .projects .project-container .projects-card #project-img{
+        width: 90%;
+    }
+
+    #particles-js{
+        height: 1220px;
+    }
+
+    .contact{
+        margin-top: 1800px;
+    }
+
+    .contact form{
+        width: 100%;
+    }
+
+    .about{
+        margin-top: 450px;
+    }
+
+    .nav-bar{
+        backdrop-filter: none;
+
+    }
+
+    .nav-bar .links{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2.5rem !important;
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        padding: 5rem 1.5rem;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        transition: right 0.3s ease;
+    }
+
+    .nav-bar .links.active{
+        display: flex;
+        right: 0;
+    }
+
+    .nav-bar .navbar-toggle{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .hero .hero-img{
+        display: flex;
+        justify-self: center;
+    }
+
+    .hero .hero-img img{
+        width: 400px;
+    }
+
+    #particles-js{
+        height: 1100px;
+    }
+
+    .about{
+        margin-top: 340px;
+    }
+
+    .contact form{
+        margin-top: 50px;
+    }
+
+    .contact form .input-content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact form .input-content .small-label label{
+        margin-top: 40px;
+    }
+
+    .contact form .input-content .small-label input{
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer .footer-btn{
+        margin-bottom: 20px;
+    }
+
+    .footer .footer-content{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 525px){
+    .contact{
+        margin-top: 1700px;
+    }
+}
+
+@media only screen and (max-width: 489px){
+    .projects{
+        margin-top: 1550px;
+    }
+
+    .contact{
+        margin-top: 1650px;
+    }
+
+    .contact .contact-heading h2{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 455px){
+    .projects{
+        margin-top: 1600px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .hero .hero-img img{
+        width: 290px;
+    }
+
+    #particles-js{
+        height: 750px;
+    }
+
+    .hero .hero-text h1{
+        font-size: 40px;
+    }
+
+    .hero .hero-text h2{
+        font-size: 25px;
+    }
+
+    .hero .hero-text .about-btn{
+        padding: 10px 10px;
+        font-size: 17px;
+    }
+
+    .hero .hero-text{
+        margin-top: 20px;
+    }
+
+    .projects{
+        margin-top: 1700px;
+    }
+
+    .about{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .projects{
+        margin-top: 1750px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .projects{
+        margin-top: 1850px;
+    }
+
+    .contact{
+        margin-top: 1550px;
+    }
+
+    .contact .contact-heading h2{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 364px){
+    .contact{
+        margin-top: 1650px;
+    }
+}
+
+@media only screen and (max-width: 356px){
+    #particles-js{
+        height: 780px;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .projects{
+        margin-top: 1950px;
+    }
+
+    .contact{
+        margin-top: 1700px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .hero .hero-img img{
+        width: 250px;
+    }
+
+    #particles-js{
+        height: 740px;
+    }
+
+    .projects{
+        margin-top: 1900px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .projects{
+        margin-top: 2000px;
+    }
+}
+
+@media only screen and (max-width: 284px){
+    .projects{
+        margin-top: 2150px;
+    }
+}

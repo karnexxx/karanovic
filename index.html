@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="container" style="height: 100vh;">
+  <div class="nav-bar">
+    <h1 class="logo"><a href="index.html">karanovic</a></h1>
+    <div class="navbar-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="links">
+      <li><a href="#">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects-scroll">Projects</a></li>
+      <li><a href="#contact-scroll">contact</a></li>
+    </ul>
+  </div>
+
+  <div class="hero"> 
+    <div class="hero-text">
+      <h1>Hi There,<br>I'm <span>Vuk Karanović</span></h1>
+      <h2>I Am a <span>Web <span class="auto-type"></span></span></h2>
+      <a href="#about" class="about-btn">About Me</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/logo.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="about" id="about">
+    <h1>About <span>Me</span></h1>
+    <hr>
+    <p>
+      <span>Hi, I’m Vuk</span> — a beginner web designer and developer passionate about
+      creating modern and functional websites and web applications.
+      I enjoy exploring and learning new things in web design and programming,
+      and my goal is to keep improving my skills and grow into a professional
+      career in this field.<br><br>
+
+      I focus on creating simple yet effective representative websites
+      that combine a modern look with fast loading speed. These websites
+      are designed to clearly present a business, project, or individual
+      online in a professional way, without unnecessary complexity.
+      My goal is to make websites that are visually appealing,
+      easy to use, and optimized for smooth performance,
+      so they leave a strong first impression while
+      remaining practical and accessible.
+    </p>
+    <div class="skills">
+      <div class="skill">
+        <img src="images/fast.jpg" alt="">
+        <h1>Fast</h1>
+        <p>Fast load times and smooth interactivity are my top priority.</p>
+      </div>
+      <div class="skill">
+        <img src="images/creative.jpg" alt="">
+        <h1>Creative</h1>
+        <p>Creativity is at the heart of every page I design, bringing concepts to life online.</p>
+      </div>
+      <div class="skill">
+        <img src="images/responsive.jpg" alt="">
+        <h1>Responsive</h1>
+        <p>My layouts will work on any device, big or small.</p>
+      </div>
+      <div class="skill">
+        <img src="images/dynamic.jpg" alt="">
+        <h1>Dynamic</h1>
+        <p>Websites don't have to be static. I love making pages come to life.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects" id="projects-scroll">
+    <h1>My projects</h1>
+    <h4>Some of my distinguished works</h4>
+  <div class="project-container">
+    <div class="projects-card">
+      <img id="project-img" src="images/coffee-shop-img.png" alt="coffee-shop-img">
+      <div class="project-text">
+        <a id="web-btn" href="https://coffeshop-karanovic.netlify.app/" target="_blank">web design</a>
+        <h2>Web design for online <br>coffee shop.</h2>
+        <a id="details" href="https://coffeshop-karanovic.netlify.app/" target="_blank">See details <img src="images/arrow.png" alt=""></a>
+      </div>
+    </div>
+    <div class="projects-card" id="reverse">
+      <div class="project-text">
+        <a id="web-btn"href="https://iris-flower-shop.netlify.app/" target="_blank">web design</a>
+        <h2>Web design for online <br>flower shop Iris.</h2>
+        <a id="details" href="https://iris-flower-shop.netlify.app/" target="_blank">See details <img src="images/arrow.png" alt=""></a>
+      </div>
+      <img id="project-img" src="images/flower-shop-iris.png" alt="coffee-shop-img">
+    </div>
+    <div class="projects-card">
+      <img id="project-img" src="images/calculator.png" alt="coffee-shop-img">
+      <div class="project-text">
+        <a id="web-btn" href="https://calculatorkaranovic.netlify.app/" target="_blank">web app</a>
+        <h2>Simple calculator <br> JavaScript project.</h2>
+        <a id="details" href="https://calculatorkaranovic.netlify.app/" target="_blank">See details <img src="images/arrow.png" alt=""></a>
+      </div>
+    </div>
+    <div class="projects-card" id="reverse" style="padding-bottom: 60px;">
+      <div class="project-text">
+        <a id="web-btn" href="https://etch-a-shetch-karanovic.netlify.app/" target="_blank">web app</a>
+        <h2>Simple Etch a Sketch<br> JavaScript project.</h2>
+        <a id="details" href="https://etch-a-shetch-karanovic.netlify.app/" target="_blank">See details <img src="images/arrow.png" alt=""></a>
+      </div>
+      <img id="project-img" src="images/etch-a-sketch.png" alt="coffee-shop-img">
+    </div>
+  </div>
+</div>
+
+<div class="contact" id="contact-scroll">
+  <div class="contact-heading">
+    <h1>Get in touch</h1>
+    <h2>karanovicc09@gmail.com</h2>
+    <p>Feel free to contact me with any inquiries or questions!</p>
+  </div>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="ccead10e-e6dc-4ed0-8ac5-7cbac46ab88b">
+    <div class="input-content">
+      <div class="small-label">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="contact-inputs" required>
+      </div>
+      <div class="small-label">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" class="contact-inputs" required>
+      </div>
+    </div>
+    <label for="message" style="align-self: flex-start; color: #0e43d4; font-family: font1; font-size: 14px; margin-top: 40px;">Message</label>
+    <textarea name="message" id="message" class="message-input" cols="50" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</div>
+  
+
+
+<div class="container-fluid" id="footer-container">
+  <div class="container">
+    <div class="footer">
+    <div class="footer-content">
+      <h1>get in touch</h1>
+      <p>If you need a modern and functional website, or want to improve your existing one, feel free to get in touch. I specialize in web design and development, with the goal of turning every idea into a unique and high-quality online solution. I look forward to potential collaborations and new challenges.
+      </p>
+    </div>
+    <div class="footer-btn">
+      <a href="#contact-scroll">contact</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed(".auto-type",{
+    strings: ["Programmer", "Designer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  })
+</script>
+
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('particles.json loaded...');
+  });
+</script>
+
+<script src="js/lib/stats.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
