@@ -228,6 +228,10 @@
         margin-top: 340px;
     }
 
+    .contact{
+        margin-top: 1850px;
+    }
+
     .contact form{
         margin-top: 50px;
     }
@@ -256,11 +260,19 @@
     .footer .footer-content{
         width: 100%;
     }
+
+    .projects .project-container .projects-card .project-text h2{
+        margin-bottom: 20px;
+    }
+
+    .projects .project-container .projects-card .project-text{
+        margin-bottom: 50px;
+    }
 }
 
 @media only screen and (max-width: 525px){
     .contact{
-        margin-top: 1700px;
+        margin-top: 1750px;
     }
 }
 
@@ -331,7 +343,7 @@
     }
 
     .contact{
-        margin-top: 1550px;
+        margin-top: 1600px;
     }
 
     .contact .contact-heading h2{
@@ -348,6 +360,10 @@
 @media only screen and (max-width: 356px){
     #particles-js{
         height: 780px;
+    }
+
+    .contact{
+        margin-top: 1700px;
     }
 }
 
