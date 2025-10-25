@@ -79,6 +79,7 @@ canvas{
   height: 70px;
   font-family: font2;
   z-index: 999;
+  animation: fadeDown 0.6s ease-in-out forwards;
 }
 
 .nav-bar .navbar-toggle{
@@ -160,13 +161,15 @@ canvas{
 }
 
 .hero .hero-img{
-  margin-top: 20px;
+  margin-top: 50px;
+  animation: fadeIn 0.6s ease-in-out forwards;
 }
 
 .hero .hero-text{
   display: flex;
   margin-top: -70px;
   flex-direction: column;
+  animation: fadeIn 0.6s ease-in-out forwards;
 }
 
 .hero .hero-text h1{
@@ -212,6 +215,19 @@ canvas{
   height: 100vh;
 }
 
+.about p .word-fade {
+  animation: wordFade 2s both linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
+  animation-delay: calc(var(--i) * 100ms);  
+}
+
+.about-fade {
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
+} 
+
 .about h1{
   text-align: center;
   font-size: 60px;
@@ -231,9 +247,12 @@ canvas{
   background-color: #9f0be4;
   margin: auto;
   margin-top: 10px;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
 }
 
-.about p span{
+.about p .name{
   color: #7303a7;
 }
 
@@ -241,19 +260,23 @@ canvas{
   padding-top: 70px;
   color: #202020;
   font-family: font3;
-  font-size: 25px;
+  font-size: 27px;
 }
 
 .skills{
   display: flex;
   flex-wrap: wrap;
-  padding-top: 90px;
+  padding-top: 110px;
   justify-content: space-between;
 }
 
 .skills .skill{
+  opacity: 0;
   width: 308px;
   margin-bottom: 100px;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
 }
 
 .skills h1{
@@ -279,6 +302,24 @@ canvas{
 
 .projects{
   height: 100vh;
+}
+
+.projects .projects-fade {
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+
+.projects .projects-fade2 {
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+
+.projects .project-container .projects-card {
+  animation: fade-in-up 0.6s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .projects h1{
@@ -312,8 +353,16 @@ canvas{
   column-gap: 150px;
 }
 
-.projects .project-container .projects-card #project-img{
+.projects .project-container .projects-card .img-link {
   width: 50%;
+}
+
+.projects .project-container .projects-card .img-link:hover{
+  animation: blur-effect 0.5s both;
+}
+
+.projects .project-container .projects-card #project-img{
+  width: 100%;
   border-radius: 25px;
   box-shadow: 2px 2px 8px #000;
 }
@@ -374,6 +423,18 @@ canvas{
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.contact .contact-heading {
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+
+.contact form {
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
 }
 
 .contact .contact-heading h1{

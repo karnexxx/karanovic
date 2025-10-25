@@ -1,3 +1,17 @@
+@media only screen and (max-width: 2560px){  
+    .projects {
+        margin-top: 150px;
+    }
+
+    .about {
+        margin-top: 00px;
+    }
+
+    .contact {
+        margin-top: 1140px;
+    }
+}   
+
 @media only screen and (max-width: 1399px){
     #particles-js{
         height: 1150px;
@@ -28,7 +42,11 @@
     }
 
     .projects{
-        margin-top: 500px;
+        margin-top: 540px;
+    }
+
+    .projects .project-container .projects-card .project-text h2 {
+        margin-bottom: 30px;
     }
 
     .contact form .input-content{
@@ -37,12 +55,16 @@
         row-gap: 20px;
     }
 
+    .contact {
+        margin-top: 950px;
+    }
+
     .contact form .input-content .small-label input{
         width: 300px;
     }
 }
 
-@media only screen and (max-width: 1199px){
+@media only screen and (max-width: 1201px){
     #particles-js{
         height: 1150px;
     }
@@ -72,7 +94,7 @@
     }
 
     .projects{
-        margin-top: 550px;
+        margin-top: 500px;
     }
 
     .projects .project-container .projects-card .project-text #web-btn{
@@ -95,7 +117,7 @@
     }
 
     .contact{
-        margin-top: 800px;
+        margin-top: 700px;
     }
 
     .contact form .input-content .small-label input{
@@ -105,7 +127,7 @@
 
 @media only screen and (max-width: 992px){
     .projects{
-        margin-top: 750px;
+        margin-top: 740px;
     }
 
     .projects .project-container .projects-card{
@@ -118,8 +140,18 @@
         flex-direction: column-reverse;
     }
 
+    .projects .project-container .projects-card .project-text {
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
+
     .projects .project-container .projects-card #project-img{
-        width: 65%;
+        width: 80%;
+    }
+
+    .projects .project-container .projects-card .img-link {
+        width: 100%;
+        text-align: center;
     }
 
     .projects .project-container .projects-card .project-text #web-btn{
@@ -132,7 +164,7 @@
     }
 
     .contact{
-        margin-top: 1750px;
+        margin-top: 2300px;
     }
 
     .contact form{
@@ -142,7 +174,7 @@
 
 @media only screen and (max-width: 768px){
     .projects{
-        margin-top: 1500px;
+        margin-top: 1550px;
     }
 
     .projects .project-container .projects-card #project-img{
@@ -154,7 +186,7 @@
     }
 
     .contact{
-        margin-top: 1800px;
+        margin-top: 2100px;
     }
 
     .contact form{
@@ -225,11 +257,11 @@
     }
 
     .about{
-        margin-top: 340px;
+        margin-top: 300px;
     }
 
     .contact{
-        margin-top: 1850px;
+        margin-top: 1860px;
     }
 
     .contact form{
@@ -253,6 +285,10 @@
         flex-direction: column;
     }
 
+    .projects {
+        margin-top: 1500px;
+    }
+
     .footer .footer-btn{
         margin-bottom: 20px;
     }
@@ -268,21 +304,39 @@
     .projects .project-container .projects-card .project-text{
         margin-bottom: 50px;
     }
+
+    .projects .project-container .projects-card .img-link {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 525px){
     .contact{
         margin-top: 1750px;
     }
+
+    .projects {
+        margin-top: 1550px;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .projects {
+        margin-top: 1600px;
+    }
 }
 
 @media only screen and (max-width: 489px){
     .projects{
-        margin-top: 1550px;
+        margin-top: 1650px;
+    }
+
+    .projects .project-container .projects-card .project-text h2{
+        font-size: 30px;
     }
 
     .contact{
-        margin-top: 1650px;
+        margin-top: 1600px;
     }
 
     .contact .contact-heading h2{
@@ -290,9 +344,33 @@
     }
 }
 
+@media only screen and (max-width: 475px) {
+    .contact{
+        margin-top: 1550px;
+    }
+}
+
 @media only screen and (max-width: 455px){
     .projects{
-        margin-top: 1600px;
+        margin-top: 1700px;
+    }
+}
+
+@media only screen and (max-width: 433px) {
+    .contact{
+        margin-top: 1750px;
+    }
+
+    .projects{
+        margin-top: 1750px;
+    }
+
+    .projects .project-container .projects-card .img-link {
+        width: 100%;
+    }
+
+    .projects .project-container .projects-card #project-img {
+        width: 100%;
     }
 }
 
@@ -323,7 +401,7 @@
     }
 
     .projects{
-        margin-top: 1700px;
+        margin-top: 1800px;
     }
 
     .about{
@@ -331,15 +409,25 @@
     }
 }
 
+@media only screen and (max-width: 409px) {
+    .projects{
+        margin-top: 1850px;
+    }
+
+    .contact{
+        margin-top: 1640px;
+    }
+}
+
 @media only screen and (max-width: 400px){
     .projects{
-        margin-top: 1750px;
+        margin-top: 1850px;
     }
 }
 
 @media only screen and (max-width: 370px){
     .projects{
-        margin-top: 1850px;
+        margin-top: 1900px;
     }
 
     .contact{
@@ -351,9 +439,19 @@
     }
 }
 
+@media only screen and (max-width: 368px) {
+    .contact .contact-heading h1{
+        font-size: 40px;
+    }
+
+    .contact {
+        margin-top: 1600;
+    }
+}
+
 @media only screen and (max-width: 364px){
     .contact{
-        margin-top: 1650px;
+        margin-top: 1570px;
     }
 }
 
@@ -363,17 +461,31 @@
     }
 
     .contact{
-        margin-top: 1700px;
+        margin-top: 1570px;
+    }
+
+    .projects{
+        margin-top: 2000px;
+    }
+
+    .projects .projects-fade {
+        font-size: 40px;
     }
 }
 
 @media only screen and (max-width: 340px){
     .projects{
-        margin-top: 1950px;
+        margin-top: 2050px;
     }
 
     .contact{
-        margin-top: 1700px;
+        margin-top: 1570px;
+    }
+}
+
+@media only screen and (max-width: 329px) {
+    .projects{
+        margin-top: 2100px;
     }
 }
 
@@ -387,18 +499,31 @@
     }
 
     .projects{
-        margin-top: 1900px;
+        margin-top: 2150px;
     }
 }
 
+@media only screen and (max-width: 305px) {
+    .projects{
+        margin-top: 2200px;
+    }
+}
+
+
 @media only screen and (max-width: 300px){
     .projects{
-        margin-top: 2000px;
+        margin-top: 2200px;
+    }
+}
+
+@media only screen and (max-width: 297px) {
+    .projects{
+        margin-top: 2300px;
     }
 }
 
 @media only screen and (max-width: 284px){
     .projects{
-        margin-top: 2150px;
+        margin-top: 2350px;
     }
 }
